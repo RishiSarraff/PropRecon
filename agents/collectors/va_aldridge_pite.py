@@ -85,3 +85,6 @@ class AldridgePiteCollector(BaseCollector):
             auction_date=self._parse_date(cells[6].text.strip()),
             loan_amount=self._parse_currency(cells[7].text.strip())
         )
+    
+# apc = AldridgePiteCollector()
+# apc.collect()
