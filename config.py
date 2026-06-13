@@ -5,7 +5,7 @@ load_dotenv()
 
 # Anthropic
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-CLAUDE_MODEL = "claude-sonnet-4-20250514" # change as project scope changes
+CLAUDE_MODEL = os.getenv("CLAUDE_MODEL") # change as project scope changes
 
 # Paths
 INPUT_DIR="data/input"
@@ -83,3 +83,4 @@ DEPOSIT_RULES = {
         "note": "ALERT: Blank cheque required, submit 10 min before auction"
     }
 }
+
